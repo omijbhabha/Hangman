@@ -170,8 +170,8 @@ def addwords():
     count=0
     while count < no:
         add = input("Enter the word you want to input:")
-        if " " in add:
-            print("Can't enter word with space")
+        if add.isalpha()==True:
+            print("ENTER VALID WORD")
         else:
             addw.append(add)
             print(addw)
