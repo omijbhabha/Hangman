@@ -170,7 +170,7 @@ def addwords():
     count=0
     while count < no:
         add = input("Enter the word you want to input:")
-        if add.isalpha()==True:
+        if add.isalpha()==False:
             print("ENTER VALID WORD")
         else:
             addw.append(add)
