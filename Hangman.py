@@ -40,7 +40,7 @@ def modifywords():
     flag=0
     a = input("Do you want to make changes to the list of words:")
     a.lower()
-    if 'y' in a:
+    if 'y' or 'Y' in a:
         while flag==0:
             try:
                 b = int(input("1:ADD\n2:DELETE\n"))
@@ -164,7 +164,10 @@ def addwords():
     while flag==0:
         try:
             no= int(input("How many words do you want to add?:"))
-            flag=1
+            if no==0:
+                print("\nEnter a number greater than 0\n")
+            else:
+                flag=1
         except:
             print("INPUT A NUMBER!")
     count=0
@@ -185,13 +188,13 @@ def addwords():
 def ask_win():
     ask = input("Do you want to enter result into database?")
     ask.lower()
-    if 'y' in ask:
+    if 'y' or 'Y' in ask:
         inputwin()
 
 def ask_loss():
     ask = input("Do you want to enter result into database?")
     ask.lower()
-    if 'y' in ask:
+    if 'y' or 'Y' in ask:
         inputloss()
         
 print("Welcome to Hangman\n")
