@@ -188,13 +188,13 @@ def addwords():
 def ask_win():
     ask = input("Do you want to enter result into database?")
     ask.lower()
-    if 'y' or 'Y' in ask:
+    if 'y' in ask:
         inputwin()
 
 def ask_loss():
     ask = input("Do you want to enter result into database?")
     ask.lower()
-    if 'y' or 'Y' in ask:
+    if 'y' in ask:
         inputloss()
         
 print("Welcome to Hangman\n")
