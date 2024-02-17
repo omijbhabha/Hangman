@@ -355,4 +355,4 @@ while True:
             print("\n\nWrong!\nTRY AGAIN\n\n")
             count += 1
             print(display)
-print(123)
+print(1234)
