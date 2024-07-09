@@ -1,3 +1,3 @@
-hangman game made by a stupid idiot
+hangman game made for school project
 highly inefficient
 help
